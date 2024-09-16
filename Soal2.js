@@ -34,14 +34,11 @@ let productBin = {
     ],
     "message": "success"
   }
-  
-  // Fungsi untuk menghitung total quantity dari productCode tertentu
+
   function hitungTotalQuantity(productBin, productCode) {
       let totalQuantity = 0;
   
-      // Menggunakan forEach untuk iterasi setiap elemen di dalam array
       productBin.data.forEach(item => {
-          // Jika productCode sesuai, tambahkan quantity ke totalQuantity
           if (item.productCode === productCode) {
               totalQuantity += item.quantity;
           }
@@ -50,8 +47,6 @@ let productBin = {
       return totalQuantity;
   }
   
-  // Panggil fungsi dengan productCode "FBR00040101"
   const totalQuantity = hitungTotalQuantity(productBin, "FBR00040101");
   
   console.log(`Total quantity untuk productCode FBR00040101 adalah: ${totalQuantity}`);
-  
