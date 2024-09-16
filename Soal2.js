@@ -28,7 +28,7 @@ let productBin = {
         "productId": 110000081009,
         "productName": "FloBrand-DressBSPink",
         "productCode": "FBR00040101",
-        "quantity": 100,
+        "quantity": 10,
         "createdTime": "2022-02-08T10:35:19Z",
       }
     ],
